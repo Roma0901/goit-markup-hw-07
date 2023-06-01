@@ -36,10 +36,50 @@ ol {
 img {
   display: block;
 }
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+
 /* ============================================HEADER======================================== */
+.menu {
+  display: none;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-mobile-menu {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+.address-list {
+  display: none;
+}
 /* LOGO */
 
-.logo {
+/* .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -51,9 +91,9 @@ img {
 }
 .logo-second-part {
   color: #2e2f42;
-}
+} */
 /* NAVIGATION */
-.menu-item {
+/* .menu-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -80,9 +120,9 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 /* ADDRES */
-.addres-list {
+/* .addres-list {
   font-style: normal;
 }
 .addres-link {
@@ -96,7 +136,6 @@ img {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
-  /* padding: 24px 0; */
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -127,7 +166,7 @@ img {
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
-}
+} */
 
 /* ============================================/HEADER======================================== */
 /* ============================================MAIN======================================== */
@@ -218,6 +257,7 @@ img {
   padding-bottom: 24px;
   margin-bottom: 8px;
 }
+*/
 /* WHAT ARE WE DOING */
 .wawd-container {
   padding-bottom: 120px;
@@ -552,13 +592,13 @@ img {
   transform: translateY(0);
 }
 /* ---------------------------------------------disposition--------------------------------------------- */
-.container {
+/* .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 /* --------------------------------------------MODAL-Window--------------------------------------------- */
 .backdrop {
   position: fixed;
