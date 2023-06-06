@@ -75,6 +75,12 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+@media screen and (max-width: 427px) {
+  .mobile-address-tell {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 .mobile-address-email {
   display: flex;
   color: #434455;
@@ -287,7 +293,7 @@ img {
   .logo {
     margin-right: 76px;
   }
-  .addres-link {
+  .address-link {
     font-size: 16px;
     text-decoration: none;
     line-height: 1.5;
@@ -324,7 +330,7 @@ img {
   background-position: center;
   margin: 0 auto;
   padding-top: 112px;
-  padding-bottom: 240px;
+  padding-bottom: 112px;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -345,6 +351,8 @@ img {
   }
 }
 .title {
+  display: flex;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -354,6 +362,8 @@ img {
   margin-right: auto;
   margin-bottom: 72px;
   color: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 .hero-btn {
   border: none;
@@ -384,6 +394,12 @@ img {
       ),
       url(../images/hero/tablet-people-oficce.jpg);
   }
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -398,12 +414,7 @@ img {
       url("../images/hero/tablet-people-office@2x.png");
   }
 }
-.title {
-  font-size: 56px;
-  line-height: 1.07;
-  max-width: 496px;
-  margin-bottom: 36px;
-}
+
 @media screen and (min-width: 1128px) {
   .hero {
     padding-top: 188px;
@@ -428,10 +439,6 @@ img {
       url(../images/hero/desctop-people-office@2x.png);
   }
 }
-.title {
-  margin-bottom: 48px;
-}
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-color);
@@ -447,12 +454,17 @@ img {
   padding-bottom: 96px;
 }
 .description-title {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 .description {
   font-weight: 500;
@@ -489,6 +501,7 @@ img {
     margin-bottom: 8px;
   }
   .description {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -653,6 +666,7 @@ img {
 .customers-list {
   display: flex;
   gap: 16px;
+  row-gap: 72px;
   flex-wrap: wrap;
 }
 .customers-item {
@@ -690,7 +704,7 @@ img {
     width: calc((100% - 48px) / 3);
   }
   .customers-list {
-    column-gap: 24px;
+    gap: 24px;
     row-gap: 72px;
   }
 }
@@ -728,21 +742,23 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 268px;
-  margin-bottom: 72px;
 }
 .footer-right-side {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 72px;
 }
 .footer-right-side-text {
-  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+.footer-left-side {
+  margin-bottom: 72px;
 }
 .link-social-icon {
   width: 100%;
@@ -758,7 +774,6 @@ img {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .link-social-icon:hover,
 .link-social-icon:focus {
@@ -832,21 +847,31 @@ img {
     flex-direction: column;
     align-items: baseline;
   }
+  .logo-footer {
+    justify-content: inherit;
+  }
 
   .footer-tablet-container {
     display: flex;
   }
   .footer-left-side {
     margin-right: 24px;
+    align-items: baseline;
+  }
+  .footer-right-side {
+    align-items: baseline;
+    margin-bottom: 0;
   }
   .footer-input {
     width: 264px;
+    margin-bottom: 0;
   }
   .form-footer {
     display: flex;
   }
   .footer-button {
     margin-left: 24px;
+    margin-right: 0;
   }
   .footer-form-container {
     align-items: baseline;
@@ -862,10 +887,10 @@ img {
   .footer-left-side {
     margin-right: 120px;
   }
-  .footer-right-side {
+  .footer-tablet-container {
     margin-right: 80px;
-    align-items: baseline;
   }
+
   .footer-link-list {
     margin: 0;
   }
@@ -976,14 +1001,6 @@ img {
   transform: translateY(0);
 }
 
-/* ---------------------------------------------disposition--------------------------------------------- */
-/* .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-} */
 /* --------------------------------------------MODAL-Window--------------------------------------------- */
 .backdrop {
   position: fixed;
