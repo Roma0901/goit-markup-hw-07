@@ -234,7 +234,7 @@ img {
     display: none;
   }
 
-  .logo {
+  .logo-header {
     margin-right: 120px;
   }
   .mobile-menu-btn-open {
@@ -290,7 +290,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
   }
-  .logo {
+  .logo-header {
     margin-right: 76px;
   }
   .address-link {
@@ -351,7 +351,6 @@ img {
   }
 }
 .title {
-  display: flex;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
@@ -362,8 +361,7 @@ img {
   margin-right: auto;
   margin-bottom: 72px;
   color: #ffffff;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .hero-btn {
   border: none;
@@ -387,7 +385,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-bottom: 204px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -454,17 +451,13 @@ img {
   padding-bottom: 96px;
 }
 .description-title {
-  display: flex;
-  justify-content: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  text-align: center;
 }
 .description {
   font-weight: 500;
@@ -491,6 +484,9 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+  }
+  .description-title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -727,6 +723,9 @@ img {
   align-items: center;
   flex-direction: column;
 }
+.footer-tablet-container {
+  margin-bottom: 72px;
+}
 .logo-footer {
   display: flex;
   align-items: center;
@@ -747,7 +746,6 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 72px;
 }
 .footer-right-side-text {
   font-weight: 500;
@@ -832,6 +830,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
+  opacity: 0.6;
   margin-bottom: 16px;
 }
 .footer-input::placeholder {
@@ -856,7 +855,7 @@ img {
   }
   .footer-left-side {
     margin-right: 24px;
-    align-items: baseline;
+    margin-bottom: 0;
   }
   .footer-right-side {
     align-items: baseline;
@@ -884,13 +883,19 @@ img {
   .footer-container {
     flex-direction: row;
   }
+  .footer-tablet-container {
+    margin-bottom: 0;
+  }
   .footer-left-side {
     margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .footer-right-side {
+    margin-bottom: 0;
   }
   .footer-tablet-container {
     margin-right: 80px;
   }
-
   .footer-link-list {
     margin: 0;
   }
